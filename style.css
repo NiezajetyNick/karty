@@ -24,6 +24,16 @@
     font-size: large;
 }
 
+.conc{
+    height: 50%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
 .karta{
     height: 70%;
     width: 20%;
