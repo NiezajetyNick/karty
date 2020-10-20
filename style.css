@@ -14,4 +14,23 @@
 .zestaw{
     height: 60%;
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.tresc{
+    font-size: large;
+}
+
+.karta{
+    height: 70%;
+    width: 20%;
+    text-align: center;
+    color: white;
+    background-image: url(https://www.elisascience.org/files/styles/keyimage/public/images/M31_Spiral_Galaxy.jpg?itok=Jo_1T4c9);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
