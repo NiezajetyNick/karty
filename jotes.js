@@ -1,19 +1,85 @@
 const karta = document.querySelector(".karta");
 const tresc = document.getElementById("tresc");
-const btn = document.querySelector(".btn");
+const karta2 = document.querySelector(".karta2");
+const tresc2 = document.getElementById("tresc2");
+const karta3 = document.querySelector(".karta3");
+const tresc3 = document.getElementById("tresc3");
 let zmienna = 0;
+let zmienna2 = 0;
+let zmienna3 = 0;
+
 karta.addEventListener("mouseover", function(){
     if(zmienna==0){
         tresc.className="pokaz";
+        tresc.style.animation = "wej 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
         zmienna++;
     }else{
         tresc.className="schowaj";
+        tresc.style.animation = "wyj 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
         zmienna--;
     }
-    
 });
-// tresc.style.animation = "wej 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
-// karta.addEventListener("click", function(){
-//     tresc.style.display="none";
-//     tresc.style.animation = "wyj 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
-// });
+
+karta.addEventListener("mouseleave", function(){
+    if(zmienna==0){
+        tresc.className="schowaj";
+        tresc.style.animation = "wej 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
+        zmienna++;
+    }else{
+        tresc.className="pokaz";
+        tresc.style.animation = "wyj 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
+        zmienna--;
+    }
+});
+
+// ---------------------------------------
+
+karta2.addEventListener("mouseover", function(){
+    if(zmienna2==0){
+        tresc2.className="pokaz";
+        tresc2.style.animation = "wej 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
+        zmienna2++;
+    }else{
+        tresc2.className="schowaj";
+        tresc2.style.animation = "wyj 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
+        zmienna2--;
+    }
+});
+
+karta2.addEventListener("mouseleave", function(){
+    if(zmienna2==0){
+        tresc2.className="schowaj";
+        tresc2.style.animation = "wej 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
+        zmienna2++;
+    }else{
+        tresc2.className="pokaz";
+        tresc2.style.animation = "wyj 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
+        zmienna2--;
+    }
+});
+
+// ---------------------------------------
+
+karta3.addEventListener("mouseover", function(){
+    if(zmienna3==0){
+        tresc3.className="pokaz";
+        tresc3.style.animation = "wej 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
+        zmienna3++;
+    }else{
+        tresc3.className="schowaj";
+        tresc3.style.animation = "wyj 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
+        zmienna3--;
+    }
+});
+
+karta3.addEventListener("mouseleave", function(){
+    if(zmienna3==0){
+        tresc3.className="schowaj";
+        tresc3.style.animation = "wej 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
+        zmienna3++;
+    }else{
+        tresc3.className="pokaz";
+        tresc3.style.animation = "wyj 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
+        zmienna3--;
+    }
+});

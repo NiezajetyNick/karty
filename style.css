@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient( rgba(2,0,36,1) 0%, rgba(9,9,121,1) 4%, rgba(0,212,255,1));
 }
 
 .zestaw{
@@ -17,38 +18,100 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
+
 #tresc{
     font-size: large;
+    margin-top: 1rem;
 }
+
+#tresc2{
+    font-size: large;
+    margin-top: 1rem;
+}
+
+#tresc3{
+    font-size: large;
+    margin-top: 1rem;
+}
+
 .pokaz{
     display: block;
+    width: 70%;
 }
+
 .schowaj{
     display: none;
 }
 
 .conc{
-    height: 50%;
-    width: 80%;
     display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conc2{
+    display: flex;
+    font-weight: 700;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    transform: translateY(calc(100% - 4.5rem));
+}
+
+.conc3{
+    display: flex;
+    font-weight: 700;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 
 .karta{
     height: 70%;
     width: 20%;
+    display: flex;
+    justify-items: center;
+    align-items: flex-end;
     text-align: center;
     color: white;
     background-image: url(https://www.elisascience.org/files/styles/keyimage/public/images/M31_Spiral_Galaxy.jpg?itok=Jo_1T4c9);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    box-shadow: 1px 1px 3px 3px;
+}
+
+.karta2{
+    height: 70%;
+    width: 20%;
+    display: flex;
+    justify-items: center;
+    align-items: flex-end;
+    text-align: center;
+    color: white;
+    background-image: url(https://lh3.googleusercontent.com/proxy/rP0Jr7THp0OABKZ817P2ArYoxGmmru-Kxl_Y2UwUfqxA5LsoGIkodZdueST_berIH0qnH6wsz1-0NlXqM0dP4MI53K6ZBXQuZ7fYO41PRyTBpZV8F82eLO3AErO3iDFMUZxNtyuwFHKN24jNNH4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 1px 3px 3px;
+}
+
+.karta3{
+    height: 70%;
+    width: 20%;
+    display: flex;
+    justify-items: center;
+    align-items: flex-end;
+    text-align: center;
+    color: white;
+    background-image: url(https://lh3.googleusercontent.com/proxy/LfCI7WEGMB2PsrVaeFMD7GEJQginuKIHXLV2hYjL-hpRt4l5tEUt5BHXH4YykzrqTueTbM4HNOzl_157_XPZkqZgOELRML0mrVg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 1px 3px 3px ;
 }
 
 
