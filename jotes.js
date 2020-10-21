@@ -1,11 +1,16 @@
 const karta = document.querySelector(".karta");
 const tresc = document.getElementById("tresc");
+const conc = document.querySelector(".conc");
+let zmienna = 0;
+
 const karta2 = document.querySelector(".karta2");
 const tresc2 = document.getElementById("tresc2");
+const conc2 = document.querySelector(".conc2");
+let zmienna2 = 0;
+
 const karta3 = document.querySelector(".karta3");
 const tresc3 = document.getElementById("tresc3");
-let zmienna = 0;
-let zmienna2 = 0;
+const conc3 = document.querySelector(".conc3");
 let zmienna3 = 0;
 
 karta.addEventListener("mouseover", function(){
