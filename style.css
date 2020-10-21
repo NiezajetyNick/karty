@@ -19,9 +19,14 @@
     align-items: center;
 
 }
-
-.tresc{
+#tresc{
     font-size: large;
+}
+.pokaz{
+    display: block;
+}
+.schowaj{
+    display: none;
 }
 
 .conc{
@@ -31,6 +36,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    transform: translateY(calc(100% - 4.5rem));
 }
 
 
@@ -44,3 +50,36 @@
     background-size: cover;
     background-position: center;
 }
+
+
+@keyframes wej {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+  }
+
+  @keyframes wyj {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+    100% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+  }
+  
+  
