@@ -82,7 +82,6 @@ karta3.addEventListener("mouseover", function(){
         karta3.style.zIndex="0";
         prz.style.zIndex="1";
         tresc3.style.color="black"
-        tit.style.color="black"
         tresc3.style.animation = "wej 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
         karta3.style.animation = "kolor 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
         zmienna3++;
