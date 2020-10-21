@@ -82,11 +82,20 @@
     align-items: flex-end;
     text-align: center;
     color: white;
-    background-image: url(https://lh3.googleusercontent.com/proxy/rP0Jr7THp0OABKZ817P2ArYoxGmmru-Kxl_Y2UwUfqxA5LsoGIkodZdueST_berIH0qnH6wsz1-0NlXqM0dP4MI53K6ZBXQuZ7fYO41PRyTBpZV8F82eLO3AErO3iDFMUZxNtyuwFHKN24jNNH4);
+    background-image: url(https://www.e-oprawa.pl/media/PL/img/galeria/580x360/16537.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     box-shadow: 1px 1px 3px 3px;
+}
+
+.tit1{
+    color: white;
+}
+
+.op{
+    color: black;
+    font-weight: bold;
 }
 
 .karta3{
@@ -97,7 +106,7 @@
     align-items: flex-end;
     text-align: center;
     color: white;
-    background-image: url(https://lh3.googleusercontent.com/proxy/LfCI7WEGMB2PsrVaeFMD7GEJQginuKIHXLV2hYjL-hpRt4l5tEUt5BHXH4YykzrqTueTbM4HNOzl_157_XPZkqZgOELRML0mrVg);
+    background-image: url(https://images.unsplash.com/photo-1565073182887-6bcefbe225b1?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -105,10 +114,16 @@
 }
 
 .prz{
-    height: 20%;
+    height: 45%;
     width: 100%;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20%;
+}
+
+.tresc{
+    color: black;
+    font-weight: 700;
+    font-size: large;
 }
 
 @keyframes wej {
@@ -127,8 +142,6 @@
 }
 
 
-
-
 @keyframes wyj {
     0% {
       -webkit-transform: scale(1);
@@ -141,5 +154,49 @@
               transform: scale(0);
       -webkit-transform-origin: 50% 100%;
               transform-origin: 50% 100%;
+    }
+}
+
+@keyframes kolor {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+
+    25%{
+        filter: hue-rotate(22.5deg);
+    }
+
+    50%{
+        filter: hue-rotate(45deg);
+    }
+
+    75%{
+        filter: hue-rotate(67.5deg);
+    }
+
+    100%{
+        filter: hue-rotate(90deg);
+    }
+}
+
+@keyframes rolok {
+    0%{
+        filter: hue-rotate(90deg);
+    }
+
+    25%{
+        filter: hue-rotate(67.5deg);
+    }
+
+    50%{
+        filter: hue-rotate(45deg);
+    }
+
+    75%{
+        filter: hue-rotate(22.5deg);
+    }
+
+    100%{
+        filter: hue-rotate(0deg);
     }
 }

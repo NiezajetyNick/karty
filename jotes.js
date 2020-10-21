@@ -1,6 +1,7 @@
 const karta = document.querySelector(".karta");
 const tresc = document.getElementById("tresc");
 const conc = document.querySelector(".conc");
+const tit = document.querySelector(".tit1");
 let zmienna = 0;
 
 const karta2 = document.querySelector(".karta2");
@@ -23,7 +24,9 @@ karta.addEventListener("mouseover", function(){
         karta.style.opacity="80%";
         karta.style.zIndex="0";
         prz.style.zIndex="1";
-        tresc.style.animation = "wej 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
+        tit.style.color="black"
+        tresc.style.animation = "wej 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
+        karta.style.animation = "kolor 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
         zmienna++;
     }
 });
@@ -34,7 +37,9 @@ karta.addEventListener("mouseleave", function(){
         karta.style.opacity="100%";
         karta.style.zIndex="0";
         prz.style.zIndex="1";
-        tresc.style.animation = "wyj 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
+        tit.style.color="white";
+        tresc.style.animation = "wyj 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
+        karta.style.animation = "rolok 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
         zmienna--;
     }
 });
@@ -47,7 +52,9 @@ karta2.addEventListener("mouseover", function(){
         karta2.style.opacity="80%";
         karta2.style.zIndex="0";
         prz.style.zIndex="1";
-        tresc2.style.animation = "wej 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
+        tresc2.style.color="black"
+        tresc2.style.animation = "wej 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
+        karta2.style.animation = "kolor 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
         zmienna2++;
     }
 });
@@ -58,10 +65,13 @@ karta2.addEventListener("mouseleave", function(){
         karta2.style.opacity="100%";
         karta2.style.zIndex="0";
         prz.style.zIndex="1";
-        tresc2.style.animation = "wej 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
+        tit.style.color="white";
+        tresc2.style.animation = "wyj 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
+        karta2.style.animation = "rolok 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
         zmienna2--;
     }
 });
+
 
 // ---------------------------------------
 
@@ -71,7 +81,10 @@ karta3.addEventListener("mouseover", function(){
         karta3.style.opacity="80%";
         karta3.style.zIndex="0";
         prz.style.zIndex="1";
-        tresc3.style.animation = "wej 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
+        tresc3.style.color="black"
+        tit.style.color="black"
+        tresc3.style.animation = "wej 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
+        karta3.style.animation = "kolor 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
         zmienna3++;
     }
 });
@@ -82,7 +95,10 @@ karta3.addEventListener("mouseleave", function(){
         karta3.style.opacity="100%";
         karta3.style.zIndex="0";
         prz.style.zIndex="1";
-        tresc3.style.animation = "wej 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
+        tit.style.color="white";
+        tresc3.style.color="white";
+        tresc3.style.animation = "wyj 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
+        karta3.style.animation = "rolok 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
         zmienna3--;
     }
 });
